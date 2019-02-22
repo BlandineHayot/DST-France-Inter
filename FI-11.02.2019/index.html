@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta http-equiv="Content-language" content="fr" >
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Culture - France Inter - DST 4 février 2019</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div id="boderright">
+			<a href="#"><img src="images/logo.jpg" alt="logo france inter"></a> 
+		</div>
+		<img id="menu" src="images/burger.jpg" onclick="$('nav').slideToggle(900);" alt="ouverture & fermeture menu">
+		<nav>
+			<ul>
+				<li><a href="#">Info</a></li>
+				<li><a href="#">Culture</a></li>
+				<li><a href="#">Humour</a></li>
+				<li><a href="#">Musique</a></li>
+			</ul>
+		</nav>	
+	</header>
+	<section>
+		<h1>Culture</h1>
+		<hr>
+		<img onclick="$('section img:eq(3)').css('borderRadius', '50%');" src="images/norway.jpg" alt="Norvège">
+		<img onclick="$('section img:eq(4)').css('borderRadius', '50%');" src="images/shanghai.jpg" alt="Shanghai">
+		<img onclick="$('section img:eq(5)').css('borderRadius', '50%');" src="images/venezuela.jpg" alt="Venezuela">
+		<img onclick="$(this).css('borderRadius', '0');" src="images/norway.jpg" id="nor2" alt="Norvège">
+		<img onclick="$(this).css('borderRadius', '0');" src="images/shanghai.jpg" id="shan2" alt="Shanghai">
+		<img onclick="$(this).css('borderRadius', '0');" src="images/venezuela.jpg" id="ven2" alt="Venezuela">	
+	</section>	
+</body>
+</html>

@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; font-family: arial;}
+
+header { width: 100%; height: 80px; background-color: #e10135; }
+
+#boderright { width: 146px; height: 80px; z-index: 2;
+	position: fixed; top: 0; left: 0;
+	border-right: 1px solid #a00026;  }
+
+header img {margin: 15px 23px; display: block; float: left;
+	width: 100px; height: 50px; }
+
+nav { width: 50%; height: auto; float: left; }
+
+header ul {text-align: center; margin-top: 30px;
+	float: left;}
+header li {display: inline;}
+header li a {text-decoration: none; color: white; font-size: 16px;
+	margin: 0 15px;}
+
+header li a:hover {text-decoration:underline;}
+
+section { height: 2000px; 
+	margin: 0 auto;	padding: 0;}
+
+h1 { margin: 30px 0 15px 0; }
+hr { border-bottom: 1px solid grey; margin-bottom: 10px;}
+
+section img { margin: 0; padding: 0; float: left; opacity: 0.8;}
+section img:hover { opacity: 1; }
+
+/* mobile */
+@media (max-width: 800px){
+	header { min-height: 80px; max-height: 400px; max-width: 800px; }
+	header img { position: absolute; top: 0px; left: 0px}
+	nav { display: none; float: left;}
+	#menu { width: 50px; height: 50px; 
+		background-image: url(../images/burger.jpg); 
+		margin: 15px 20px; float: right; }
+	header ul { ; width: 100%; position: relative; top: 50px; left: 0;}
+	header li { display: block; width: 800px; height: 80px;
+		line-height: 80px; background-color: #4a4a4a;}
+	header li a {color: white; font-size: 19px;
+		margin: 0 15px;}
+	section { width: 400px; float: left; margin: 0 0 0 25%; }
+	section img { width: 400px; height: 240px; }
+} 
+
+/* tablette */
+@media (min-width: 801px) and (max-width: 1200px) {
+	section { width: 700px;  }
+	section img { width: 350px; height: 210px; }
+
+
+}
+
+
+/* desktop */
+@media (min-width: 1201px) {
+	section { width: 1140px; }
+	section img { width: 380px; height: 228px; }
+
+
+
+}
+
